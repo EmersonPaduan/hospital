@@ -32,7 +32,7 @@ public class Paciente {
 
     // Um paciente tem vários atendimentos
     // mappedBy indica o atributo da relação na tabela Atendimento
-    @OneToMany(mappedBy = "paciente")
+    @OneToMany(mappedBy = "paciente") 
     // Ao preencher os dados dos atendimentos
     // não preencha os dados do paciente destes atendimentos
     @JsonIgnoreProperties("paciente")
