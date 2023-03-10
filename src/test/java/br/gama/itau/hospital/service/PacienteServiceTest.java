@@ -37,6 +37,7 @@ public class PacienteServiceTest {
 
         assertThat(listaRecuperada).isNotNull();
         assertThat(listaRecuperada).isNotEmpty();
+        // testa o Id do primeiro elemento (paciente) da lista
         assertThat(listaRecuperada.get(0).getId()).isEqualTo(GeneratePaciente.pacienteId1().getId());
     }
 
